@@ -1,0 +1,13 @@
+C:\Users\RobertasTutlys\source\repos\ProblemBSolution\bin\Debug\netcoreapp3.1\ProblemBSolution.exe
+C:\Users\RobertasTutlys\source\repos\ProblemBSolution\bin\Debug\netcoreapp3.1\ProblemBSolution.deps.json
+C:\Users\RobertasTutlys\source\repos\ProblemBSolution\bin\Debug\netcoreapp3.1\ProblemBSolution.runtimeconfig.json
+C:\Users\RobertasTutlys\source\repos\ProblemBSolution\bin\Debug\netcoreapp3.1\ProblemBSolution.runtimeconfig.dev.json
+C:\Users\RobertasTutlys\source\repos\ProblemBSolution\bin\Debug\netcoreapp3.1\ProblemBSolution.dll
+C:\Users\RobertasTutlys\source\repos\ProblemBSolution\bin\Debug\netcoreapp3.1\ProblemBSolution.pdb
+C:\Users\RobertasTutlys\source\repos\ProblemBSolution\obj\Debug\netcoreapp3.1\ProblemBSolution.csprojAssemblyReference.cache
+C:\Users\RobertasTutlys\source\repos\ProblemBSolution\obj\Debug\netcoreapp3.1\ProblemBSolution.csproj.CoreCompileInputs.cache
+C:\Users\RobertasTutlys\source\repos\ProblemBSolution\obj\Debug\netcoreapp3.1\ProblemBSolution.AssemblyInfoInputs.cache
+C:\Users\RobertasTutlys\source\repos\ProblemBSolution\obj\Debug\netcoreapp3.1\ProblemBSolution.AssemblyInfo.cs
+C:\Users\RobertasTutlys\source\repos\ProblemBSolution\obj\Debug\netcoreapp3.1\ProblemBSolution.dll
+C:\Users\RobertasTutlys\source\repos\ProblemBSolution\obj\Debug\netcoreapp3.1\ProblemBSolution.pdb
+C:\Users\RobertasTutlys\source\repos\ProblemBSolution\obj\Debug\netcoreapp3.1\ProblemBSolution.genruntimeconfig.cache
