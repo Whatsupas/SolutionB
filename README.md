@@ -12,7 +12,7 @@ help them split the items between them for each trip?
 ## Input
 Input contains of up to **150** hiking trips. Each trip is given as a line in the input. The line startrs with
 1 <= **n** <= 20, the number of items they need to split. Then follows the weight of each item. The weights
-are all in the range of [**100**,**600**] grams. End of input is indicated by a linecontaining a single **0**.
+are all in the range of [**100**,**600**] grams. End of input is indicated by a line containing a single **0**.
 
 ## Output
 For each trip, output the weights of the two backpacks. Output the weight of the backpack Kattis will carry first
