@@ -3,7 +3,7 @@
 Exercise from Kattis testing system. Level - medium
 ``
 
-Problem:
+## Issue
 Kattis is taking one of her kittens out on several hiking trips, and they need to pack their backpacks.
 They have a number of items (tents, cooking equipment, food, clothing, etc), and need to split the weight between them as 
 evenly as possible. In case the weight can't be split evenly, Kattis will carry the extra weight. Can you
