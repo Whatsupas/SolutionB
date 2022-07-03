@@ -6,42 +6,53 @@ namespace ProblemBSolution
 {
     class Program
     {
+        private const string inputErrorMessage = "Input contains of up to 150 hiking trips" + "\n" + 
+                                                 "Each trip is given as a line in the input." + "\n" +
+                                                 "The line startrs with 1 <= n <= 20, the number of items they need to split." + "\n" +
+                                                 "Then follows the weight of each item. The weights are all in the range of [100,600] grams." + "\n" +
+                                                 "End of input is indicated by a line containing a single 0." + "\n" +
+                                                 "Please try again";
+
             static void Main(string[] args)
             {
 
                 var lines = new Queue<List<int>>();
 
-                // Getting input lines and collecting to Queue 
+                // Reading input lines and collecting data into queue 
 
                 while (true)
                 {
-                    string inputLine = Console.ReadLine();
-                    if (inputLine != "0")
+                    try
                     {
+                        string inputLine = Console.ReadLine();
+
+                        if (inputLine?.Equals("0") ?? true)
+                            break;
+
                         var stringArray = inputLine.Split(" ").Skip(1).ToList();
                         var intList = stringArray.Select(x => int.Parse(x)).ToList();
                         lines.Enqueue(intList);
                     }
-                    else
+                    catch (FormatException e)
                     {
-                        break;
+                        Console.WriteLine();
+                        Console.WriteLine(e.Message);
+                        Console.WriteLine();
+                        Console.WriteLine(inputErrorMessage);
                     }
-
                 }
 
-                // handling each line until queue becomes empty
+                // Handling each line until queue becomes empty
                 while (lines.Any())
                 {
-
                     List<int> objectsWeightList = lines.Dequeue();
-                // why hashSet ? : duplicates are ignored and elements lookup complexity O(1) 
-                var allPossibleSums = GetSums(objectsWeightList).ToList().ToHashSet();
+                    // why hashSet ? : duplicates are ignored and elements lookup complexity is O(1) 
+                    var allPossibleSums = GetSums(objectsWeightList).ToHashSet();
 
-                    double divisor = 2d;
-                    int totalItemsWeight = objectsWeightList.Sum();
-                    int kattisBagWeight = 0;
-                    int properWeightbalanse = (int)Math.Ceiling(totalItemsWeight / divisor);
-
+                    var divisor = 2d;
+                    var totalItemsWeight = objectsWeightList.Sum();
+                    var kattisBagWeight = 0;
+                    var properWeightbalanse = (int)Math.Ceiling(totalItemsWeight / divisor);
 
                     while (true)
                     {
@@ -52,7 +63,7 @@ namespace ProblemBSolution
                             kattisBagWeight = properWeightbalanse;
                             break;
                         }
-                        // if not then increasing proper weight value and moving to next iteration
+                        // if not then increasing proper weight value and moving to the next iteration
                         properWeightbalanse++;
                     }
 
@@ -60,11 +71,10 @@ namespace ProblemBSolution
 
                     string result = $"{kattisBagWeight} {kittensBagWeight}";
                     Console.WriteLine(result);
-
                 }
             }
 
-        // This method i borrowed from stackoverflow to find all possible sums 
+        // This method i have borrowed from stack overflow community to find all possible sums 
         public static IEnumerable<int> GetSums(List<int> list)
                 {
                       return from m in Enumerable.Range(0, 1 << list.Count)
