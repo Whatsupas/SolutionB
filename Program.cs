@@ -29,9 +29,12 @@ namespace ProblemBSolution
                         if (inputLine?.Equals("0") ?? true)
                             break;
 
-                        var stringArray = inputLine.Split(" ").Skip(1).ToList();
-                        var intList = stringArray.Select(x => int.Parse(x)).ToList();
-                        lines.Enqueue(intList);
+                        var weightOfOachItem = inputLine.Split()
+                                                        .Skip(1)
+                                                        .Select(x => int.Parse(x))
+                                                        .ToList();
+
+                        lines.Enqueue(weightOfOachItem);
                     }
                     catch (FormatException e)
                     {

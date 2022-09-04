@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\29998robtut\\Source\\Repos\\SolutionB\\ProblemBSolution.csproj",
+      "projectUniqueName": "C:\\Users\\29998robtut\\source\\repos\\SolutionB\\ProblemBSolution.csproj",
       "projectName": "ProblemBSolution",
-      "projectPath": "C:\\Users\\29998robtut\\Source\\Repos\\SolutionB\\ProblemBSolution.csproj",
+      "projectPath": "C:\\Users\\29998robtut\\source\\repos\\SolutionB\\ProblemBSolution.csproj",
       "packagesPath": "C:\\Users\\29998robtut\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\29998robtut\\Source\\Repos\\SolutionB\\obj\\",
+      "outputPath": "C:\\Users\\29998robtut\\source\\repos\\SolutionB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\29998robtut\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
